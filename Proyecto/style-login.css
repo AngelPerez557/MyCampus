@@ -1,0 +1,125 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "IndieFlower-Regular", sans-serif;
+    background-color: #2a8c4a; /* Fondo de la página */
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+  }
+  
+  .login-box {
+    background: #3d9351;
+    border-radius: 21px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .my-campus {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  
+  .Inicio-Sesion {
+    color: #ffffff;
+    font-family: "IndieFlower-Regular", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  
+  .form-container {
+    background: #64c27b;
+    border-radius: 21px;
+    padding: 20px;
+  }
+  
+  .usuario {
+    color: #ffffff;
+    text-align: left;
+    font-family: "IndieFlower-Regular", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2a8c4a;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .login-button:hover {
+    background-color: #3d9351;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .my-campus {
+      font-size: 28px;
+    }
+  
+    .Inicio-Sesion {
+      font-size: 28px;
+    }
+  
+    .usuario {
+      font-size: 24px;
+    }
+  
+    .input-field {
+      font-size: 16px;
+    }
+  
+    .login-button {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .my-campus {
+      font-size: 24px;
+    }
+  
+    .Inicio-Sesion {
+      font-size: 20px;
+    }
+  
+    .usuario {
+      font-size: 18px;
+    }
+  
+    .input-field {
+      font-size: 14px;
+    }
+  
+    .login-button {
+      font-size: 14px;
+    }
+  }

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCampus Mensajes</title>
+    <link rel="stylesheet" href="style-messages.css">
+</head>
+<body>
+    <header class="header">
+        <div class="my-campus">MyCampus</div>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="feed.html">Inicio</a></li>
+            <li><a href="messages.html">Mensajes</a></li>
+            <li><a href="#">Editar Perfil</a></li>
+            <li><a href="#" onclick="redirectToLogin()">Salir</a></li>
+        </ul>
+    </nav>
+    <main class="messages-container">
+        <div class="message-list">
+            <div class="message-item" onclick="showMessage('Usuario 1', 'Hace 2 horas', 'Este es un ejemplo de un mensaje completo.')">
+                <div class="user-info">
+                    <div class="user-avatar"></div>
+                    <div class="user-name">Usuario 1</div>
+                </div>
+                <div class="message-preview">Este es un ejemplo de un mensaje...</div>
+            </div>
+            <div class="message-item" onclick="showMessage('Usuario 2', 'Hace 3 horas', 'Otro ejemplo de un mensaje completo.')">
+                <div class="user-info">
+                    <div class="user-avatar"></div>
+                    <div class="user-name">Usuario 2</div>
+                </div>
+                <div class="message-preview">Otro ejemplo de un mensaje...</div>
+            </div>
+            <!-- Puedes agregar más mensajes aquí -->
+        </div>
+        <div class="message-detail">
+            <div class="message-header">
+                <div class="user-info">
+                    <div class="user-avatar"></div>
+                    <div id="message-user-name" class="user-name">Usuario 1</div>
+                </div>
+                <div id="message-time" class="message-time">Hace 2 horas</div>
+            </div>
+            <div id="message-content" class="message-content">
+                <p>Este es un ejemplo de un mensaje completo.</p>
+            </div>
+            <div class="message-reply">
+                <textarea placeholder="Escribe tu mensaje..."></textarea>
+                <button class="send-button">Enviar</button>
+            </div>
+        </div>
+    </main>
+    <script>
+        function redirectToLogin() {
+            window.location.href = 'Inicio.de.Sesion.html';
+        }
+
+        function showMessage(userName, time, content) {
+            document.getElementById('message-user-name').innerText = userName;
+            document.getElementById('message-time').innerText = time;
+            document.getElementById('message-content').innerHTML = '<p>' + content + '</p>';
+        }
+    </script>
+</body>
+</html>
