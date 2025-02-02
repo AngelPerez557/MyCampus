@@ -1,0 +1,134 @@
+body {
+    font-family: "IndieFlower-Regular", sans-serif;
+    background-color: #e0f7e9; /* Fondo verde claro */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos para el encabezado */
+  .header {
+    background-color: #3d9351;
+    padding: 20px;
+    text-align: center;
+    position: relative; /* Necesario para posicionar el logo */
+  }
+  
+  /* Estilos para el título MyCampus */
+  .my-campus {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 400;
+  }
+  
+  /* Estilos para la barra de navegación */
+  .navbar {
+    background-color: #343a40;
+    overflow: hidden;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .navbar ul li {
+    display: inline;
+  }
+  
+  .navbar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .navbar ul li a:hover {
+    background-color: #495057;
+  }
+  
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .perfil-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Estilos para el encabezado del perfil */
+  .profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-icon-large {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  
+  .profile-info {
+    margin-left: 20px;
+  }
+  
+  .user-name {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .user-bio {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Estilos para las acciones del perfil */
+  .profile-actions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  /* Estilos para los botones de acción */
+  .action-button {
+    background-color: #3d9351; /* Verde */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  /* Estilos para los botones de acción al pasar el ratón */
+  .action-button:hover {
+    background-color: #2a8c4a; /* Verde más oscuro */
+    transform: scale(1.05);
+  }
+  
+  /* Estilos para los botones de acción cuando están en estado "liked" */
+  .action-button.liked {
+    background-color: #ff6347; /* Color rojizo */
+    color: #ffffff; /* Color blanco */
+    transform: scale(1.1);
+  }
+  
+  /* Media Queries para pantallas de tamaño máximo 768px */
+  @media (max-width: 768px) {
+    .user-name {
+      font-size: 16px;
+    }
+  }

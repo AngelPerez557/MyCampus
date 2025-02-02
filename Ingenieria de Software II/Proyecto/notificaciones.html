@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCampus Notificaciones</title>
+    <link rel="stylesheet" href="style-notificaciones.css">
+</head>
+<body>
+    <header class="header">
+        <div class="my-campus">MyCampus</div>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="feed.html">Inicio</a></li>
+            <li><a href="amigos.html">Amigos</a></li>
+            <li><a href="messages.html">Mensajes</a></li>
+            <li><a href="buscar.html"><img src="Imagenes/search-icon.png" alt="Buscar" class="icon"></a></li>
+            <li><a href="notificaciones.html">Notificaciones</a></li>
+            <li><a href="perfil.html"><img src="Imagenes/profile-icon.png" alt="Perfil" class="profile-icon"></a></li>
+        </ul>
+    </nav>
+    <main class="notificaciones-container">
+        <div class="notification">
+            <div class="notification-header">
+                <img src="Imagenes/profile-icon.png" alt="Perfil" class="profile-icon">
+                <div class="notification-user-info">
+                    <span class="user-name">Usuario 1</span>
+                    <span class="notification-time">Hace 2 horas</span>
+                </div>
+            </div>
+            <div class="notification-content">
+                <p>Este es el contenido de la notificación. Puede incluir texto, imágenes, videos, etc.</p>
+            </div>
+            <div class="notification-actions">
+                <button class="action-button">Ver</button>
+                <button class="action-button">Eliminar</button>
+            </div>
+        </div>
+        <!-- Repite el bloque de notificación para más notificaciones -->
+    </main>
+    <script>
+        function redirectToLogin() {
+            window.location.href = 'Inicio.de.Sesion.html';
+        }
+    </script>
+</body>
+</html>

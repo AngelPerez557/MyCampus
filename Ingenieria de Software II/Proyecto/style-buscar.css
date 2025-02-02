@@ -1,0 +1,157 @@
+body {
+    font-family: "IndieFlower-Regular", sans-serif;
+    background-color: #e0f7e9; /* Fondo verde claro */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos para el encabezado */
+  .header {
+    background-color: #3d9351;
+    padding: 20px;
+    text-align: center;
+    position: relative; /* Necesario para posicionar el logo */
+  }
+  
+  /* Estilos para el título MyCampus */
+  .my-campus {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 400;
+  }
+  
+  /* Estilos para la barra de navegación */
+  .navbar {
+    background-color: #343a40;
+    overflow: hidden;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .navbar ul li {
+    display: inline;
+  }
+  
+  .navbar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .navbar ul li a:hover {
+    background-color: #495057;
+  }
+  
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .buscar-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Estilos para la barra de búsqueda */
+  .search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+  }
+  
+  .search-button {
+    background-color: #3d9351; /* Verde */
+    color: #ffffff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .search-button:hover {
+    background-color: #2a8c4a; /* Verde más oscuro */
+    transform: scale(1.05);
+  }
+  
+  /* Estilos para los resultados de búsqueda */
+  .search-results {
+    margin-top: 20px;
+  }
+  
+  .result {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .result-info {
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .result-name {
+    font-weight: bold;
+  }
+  
+  /* Estilos para los botones de acción */
+  .action-button {
+    background-color: #3d9351; /* Verde */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  /* Estilos para los botones de acción al pasar el ratón */
+  .action-button:hover {
+    background-color: #2a8c4a; /* Verde más oscuro */
+    transform: scale(1.05);
+  }
+  
+  /* Estilos para los botones de acción cuando están en estado "liked" */
+  .action-button.liked {
+    background-color: #ff6347; /* Color rojizo */
+    color: #ffffff; /* Color blanco */
+    transform: scale(1.1);
+  }
+  
+  /* Media Queries para pantallas de tamaño máximo 768px */
+  @media (max-width: 768px) {
+    .result-name {
+      font-size: 16px;
+    }
+  }

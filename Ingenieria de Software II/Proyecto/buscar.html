@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCampus Buscar</title>
+    <link rel="stylesheet" href="style-buscar.css">
+</head>
+<body>
+    <header class="header">
+        <div class="my-campus">MyCampus</div>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="feed.html">Inicio</a></li>
+            <li><a href="amigos.html">Amigos</a></li>
+            <li><a href="messages.html">Mensajes</a></li>
+            <li><a href="buscar.html"><img src="Imagenes/search-icon.png" alt="Buscar" class="icon"></a></li>
+            <li><a href="notificaciones.html">Notificaciones</a></li>
+            <li><a href="perfil.html"><img src="Imagenes/profile-icon.png" alt="Perfil" class="profile-icon"></a></li>
+        </ul>
+    </nav>
+    <main class="buscar-container">
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar..." class="search-input">
+            <button class="search-button">Buscar</button>
+        </div>
+        <div class="search-results">
+            <!-- Resultados de búsqueda -->
+            <div class="result">
+                <img src="Imagenes/profile-icon.png" alt="Perfil" class="profile-icon">
+                <div class="result-info">
+                    <span class="result-name">Resultado 1</span>
+                    <button class="action-button">Agregar</button>
+                </div>
+            </div>
+            <!-- Repite el bloque de resultado para más resultados -->
+        </div>
+    </main>
+    <script>
+        function redirectToLogin() {
+            window.location.href = 'Inicio.de.Sesion.html';
+        }
+    </script>
+</body>
+</html>

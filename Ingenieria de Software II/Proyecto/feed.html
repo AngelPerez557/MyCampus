@@ -9,54 +9,37 @@
 <body>
     <header class="header">
         <div class="my-campus">MyCampus</div>
-        /*<div class="logo-container">
-           <!--  <img src="imagenes/Logo_MySpace.jpg" alt="MySpace Logo" class="myspace-logo"> -->
-        </div> 
     </header>
     <nav class="navbar">
         <ul>
             <li><a href="feed.html">Inicio</a></li>
+            <li><a href="amigos.html">Amigos</a></li>
             <li><a href="messages.html">Mensajes</a></li>
-            <li><a href="#">Editar Perfil</a></li>
-            <li><a href="#" onclick="redirectToLogin()">Salir</a></li>
+            <li><a href="buscar.html"><img src="Imagenes/search-icon.png" alt="Buscar" class="icon"></a></li>
+            <li><a href="notificaciones.html">Notificaciones</a></li>
+            <li><a href="perfil.html"><img src="Imagenes/profile-icon.png" alt="Perfil" class="profile-icon"></a></li>
         </ul>
     </nav>
     <main class="feed-container">
         <div class="post">
             <div class="post-header">
-                <div class="user-info">
-                    <div class="user-avatar"></div>
-                    <div class="user-name">Usuario 1</div>
+                <img src="Imagenes/profile-icon.png" alt="Perfil" class="profile-icon">
+                <div class="post-user-info">
+                    <span class="user-name">Usuario 1</span>
+                    <span class="post-time">Hace 2 horas</span>
                 </div>
-                <div class="post-time">Hace 2 horas</div>
             </div>
             <div class="post-content">
-                <p>Este es un ejemplo de una publicación en el feed.</p>
+                <p>Este es el contenido de la publicación. Puede incluir texto, imágenes, videos, etc.</p>
+                <img src="Imagenes/post-image.jpg" alt="Imagen de la publicación" class="post-image">
             </div>
             <div class="post-actions">
-                <button id="like-button-1" class="action-button" onclick="toggleLike('like-button-1')">Me gusta</button>
+                <button class="action-button" onclick="toggleLike('like-button-1')" id="like-button-1">Me gusta</button>
                 <button class="action-button">Comentar</button>
-                <button class="action-button">Reaccionar</button>
+                <button class="action-button">Compartir</button>
             </div>
         </div>
-        <div class="post">
-            <div class="post-header">
-                <div class="user-info">
-                    <div class="user-avatar"></div>
-                    <div class="user-name">Usuario 2</div>
-                </div>
-                <div class="post-time">Hace 3 horas</div>
-            </div>
-            <div class="post-content">
-                <p>Otra publicación de ejemplo en el feed.</p>
-            </div>
-            <div class="post-actions">
-                <button id="like-button-2" class="action-button" onclick="toggleLike('like-button-2')">Me gusta</button>
-                <button class="action-button">Comentar</button>
-                <button class="action-button">Reaccionar</button>
-            </div>
-        </div>
-        <!-- Puedes agregar más publicaciones aquí -->
+        <!-- Repite el bloque de publicación para más publicaciones -->
     </main>
     <script>
         function redirectToLogin() {

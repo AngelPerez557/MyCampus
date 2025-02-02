@@ -3,25 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyCampus</title>
-    <link rel="stylesheet" href="style-login.css">
+    <title>MyCampus Feed</title>
+    <link rel="stylesheet" href="style-feed.css">
 </head>
 <body>
-    <div class="container">
-        <div class="login-box">
-            <div class="my-campus">MyCampus</div>
-            <div class="Inicio-Sesion">Inicio De Sesion</div>
-            <div class="form-container">
-                <div class="usuario">Usuario</div>
-                <input type="text" class="input-field" placeholder="Nombre de usuario">
-                <input type="password" class="input-field" placeholder="Contraseña">
-                <button class="login-button" onclick="redirectToFeed()">Iniciar Sesión</button>
-            </div>
-        </div>
-    </div>
+    <header class="header">
+        <div class="my-campus">MyCampus</div>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="feed.html">Inicio</a></li>
+            <li><a href="#">Amigos</a></li>
+            <li><a href="#"><img src="Imagenes/search-icon.png" alt="Buscar" class="icon"></a></li>
+            <li><a href="#">Notificaciones</a></li>
+            <li><a href="#"><img src="Imagenes/profile-icon.png" alt="Perfil" class="profile-icon"></a></li>
+        </ul>
+    </nav>
+    <main class="feed-container">
+        <!-- Contenido del feed -->
+    </main>
     <script>
-        function redirectToFeed() {
-            window.location.href = 'feed.html';
+        function redirectToLogin() {
+            window.location.href = 'Inicio.de.Sesion.html';
+        }
+
+        function toggleLike(buttonId) {
+            var button = document.getElementById(buttonId);
+            button.classList.toggle('liked');
         }
     </script>
 </body>
