@@ -39,7 +39,8 @@ body {
 }
 
 .navbar ul li a {
-  display: block;
+  display: flex;
+  align-items: center;
   color: white;
   text-align: center;
   padding: 14px 16px;
@@ -48,6 +49,12 @@ body {
 
 .navbar ul li a:hover {
   background-color: #495057;
+}
+
+.menu-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
 }
 
 .icon {
@@ -100,16 +107,20 @@ body {
 
 .post-image {
   max-width: 100%;
+  height: auto;
   border-radius: 10px;
   margin-top: 10px;
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+  max-height: 300px; /* Establece una altura máxima para las imágenes */
+  object-fit: contain; /* Mantiene la proporción de la imagen sin recortarla */
 }
 
 .post-actions {
-  margin-top: 10px;
+  margin-top: 20px; /* Baja los botones */
   display: flex;
-  justify-content: space-around;
+  justify-content: center; /* Centra los botones */
+  gap: 10px; /* Espacio entre los botones */
 }
-
 /* Estilos para los botones de acción */
 .action-button {
   background-color: #3d9351; /* Verde */
@@ -139,5 +150,19 @@ body {
 @media (max-width: 768px) {
   .user-name {
     font-size: 16px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+  }
+
+  .post-content {
+    margin-top: 10px;
+  }
+
+  .post-image {
+    max-width: 100%;
+    height: auto;
+    max-height: 150px; /* Ajusta la altura máxima para pantallas más pequeñas */
   }
 }

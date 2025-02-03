@@ -1,125 +1,100 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "IndieFlower-Regular", sans-serif;
-    background-color: #2a8c4a; /* Fondo de la página */
-  }
-  
-  .container {
-    width: 100%;
-    max-width: 400px;
-    padding: 20px;
-  }
-  
-  .login-box {
-    background: #3d9351;
-    border-radius: 21px;
-    padding: 20px;
-    width: 100%;
-    box-sizing: border-box;
-    text-align: center;
-  }
-  
-  .my-campus {
-    color: #ffffff;
-    font-size: 36px;
-    font-weight: 400;
-    margin-bottom: 20px;
-  }
-  
-  .Inicio-Sesion {
-    color: #ffffff;
-    font-family: "IndieFlower-Regular", sans-serif;
-    font-size: 36px;
-    font-weight: 400;
-    margin-bottom: 20px;
-  }
-  
-  .form-container {
-    background: #64c27b;
-    border-radius: 21px;
-    padding: 20px;
-  }
-  
-  .usuario {
-    color: #ffffff;
-    text-align: left;
-    font-family: "IndieFlower-Regular", sans-serif;
-    font-size: 28px;
-    font-weight: 400;
-    margin-bottom: 10px;
-  }
-  
-  .input-field {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-  }
-  
-  .login-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #2a8c4a;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    cursor: pointer;
-  }
-  
-  .login-button:hover {
-    background-color: #3d9351;
-  }
-  
-  /* Media Queries */
-  @media (max-width: 768px) {
-    .my-campus {
-      font-size: 28px;
-    }
-  
-    .Inicio-Sesion {
-      font-size: 28px;
-    }
-  
-    .usuario {
-      font-size: 24px;
-    }
-  
-    .input-field {
-      font-size: 16px;
-    }
-  
-    .login-button {
-      font-size: 16px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .my-campus {
-      font-size: 24px;
-    }
-  
-    .Inicio-Sesion {
-      font-size: 20px;
-    }
-  
-    .usuario {
-      font-size: 18px;
-    }
-  
-    .input-field {
-      font-size: 14px;
-    }
-  
-    .login-button {
-      font-size: 14px;
-    }
-  }
+body {
+  font-family: "IndieFlower-Regular", sans-serif;
+  background-color: #e0f7e9; /* Fondo verde claro */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Estilos para el encabezado */
+.header {
+  background-color: #3d9351;
+  padding: 20px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/* Estilos para el título MyCampus */
+.my-campus {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+/* Estilos para el contenedor de inicio de sesión */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+/* Estilos para la caja de inicio de sesión */
+.login-box {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+/* Estilos para el título de la caja de inicio de sesión */
+.login-box h2 {
+  margin-bottom: 20px;
+  color: #3d9351;
+}
+
+/* Estilos para los grupos de entrada */
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+/* Estilos para las etiquetas */
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+/* Estilos para los campos de entrada */
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Estilos para el botón de inicio de sesión */
+.login-button {
+  background-color: #3d9351; /* Verde */
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Estilos para el botón de inicio de sesión al pasar el ratón */
+.login-button:hover {
+  background-color: #2a8c4a; /* Verde más oscuro */
+  transform: scale(1.05);
+}
+
+.menu-icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
